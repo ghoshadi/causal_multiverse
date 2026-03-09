@@ -1,4 +1,4 @@
-source("ARutils.R")
+source("./utils.R")
 
 get_ci_from_ests <- function(tau.hat, tau.se, alpha = 0.05){
   return(c(tau.hat - qnorm(alpha/2, lower.tail = F)*tau.se, 
